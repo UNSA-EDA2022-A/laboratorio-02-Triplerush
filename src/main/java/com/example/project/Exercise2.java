@@ -1,4 +1,4 @@
-package com.example.project;;
+package com.example.project;
 
 import java.util.Scanner;
 
@@ -22,7 +22,9 @@ public class Exercise2 {
 			System.out.println(obj.esSubconjuntoSuma(a,0, suma));
 		}
 	}
-	
+	public boolean esSubconjuntoSumaExt(int a[], int suma) {
+		return esSubconjuntoSuma(a,0,suma);
+	}
 	public boolean esSubconjuntoSuma(int conjunto[],int n, int suma) {
 		if (suma == 0)
 			return true;
